@@ -5,8 +5,8 @@ run: build
 	docker run -d --name api -p 8000:8000 configapi:latest
 
 stop:
-	docker stop $$(docker ps -aq) && \
-	docker rm $$(docker ps -aq)
+	docker stop api && \
+	docker rm api
 
 clean: stop
 	docker rmi $$(docker images -aq)
