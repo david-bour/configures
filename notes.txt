@@ -7,3 +7,6 @@ Can see site on hello.world now
 Had to add the host URL (hello.world) to the windows, not the /etc/host on WSL2 (C:\Windows\System32\drivers\etc\hosts)
 
 https://stackoverflow.com/questions/58073936/how-to-get-ip-address-of-docker-desktop-vm
+
+k8s resource
+https://www.reddit.com/r/devops/comments/ss8a1k/fastkubernetes_kubernetes_tutorial_sample_usage/
