@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: config-client-deployment
+  labels:
+    app: config-client
+spec:
+  selector:
+    matchLabels:
+      app: config-client
+  template:
+    metadata:
+      labels:
+        app: config-client
+    spec:
+      containers:
+      - name: config-client
+        image: davidbour/configclient
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8080
